@@ -13,4 +13,7 @@ export class StudentService {
     return this._http.get('https://localhost:7033/api/Student')
   }
 
+  addStudent(data: any): Observable<any>{
+    return this._http.post('https://localhost:7033/api/Student', data)
+  }
 }

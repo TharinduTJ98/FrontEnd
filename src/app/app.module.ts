@@ -15,11 +15,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import { AddStudentComponent } from './Components/add-student/add-student.component';
 @NgModule({
   declarations: [
     AppComponent,
     TaskBarComponent,
-    MainBodyComponent
+    MainBodyComponent,
+    AddStudentComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     MatTableModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
